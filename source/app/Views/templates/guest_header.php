@@ -16,11 +16,15 @@
                 <div class="navbar navbar-light bg-light">
                     <div class="container">
                         <a class="navbar-brand" href="/">
+                            <img src="<?= base_url() ?>/images/waiter.png" width="50px" height="50px">
                             Reservation manager
                         </a>
                         <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/serviceviewer/allservices" id="services">Services</a>
+                            <li class="nav-item">                            
+                                <a class="nav-link" href="/serviceviewer/allservices" id="services">
+                                    <img src="<?= base_url() ?>/images/desk.png" width="50px" height="50px">
+                                    Services
+                                </a>
                             </li>
                         </ul>
                         <div class="d-flex">

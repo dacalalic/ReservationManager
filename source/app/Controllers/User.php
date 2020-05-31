@@ -1,11 +1,28 @@
 <?php
 
+/**
+* Danilo Lalić 0501/17
+* Božo Labović 0563/17 
+* 
+* User – klasa za funkcionalnosti registrovanog korisnika
+*
+* @version 1.0
+*/
+
+
 namespace App\Controllers;
 
 use App\Models\UserModel;
 use App\Models\ReservationModel;
 
 class User extends BaseController {
+    
+/**
+* Index funkcija prikazuje napravljene rezervacije korisnika 
+*
+* @return void
+*
+*/
 
     public function index() {
         helper("url");
@@ -41,12 +58,24 @@ class User extends BaseController {
         echo view("user/user_reservations", $data);
         echo view("templates/footer");
     }
-
+/**
+* Logout funkcija izloguje korisnika i prikazuje pocetnu stranu
+*
+* @return void
+*
+*/
+    
     public function logout() {
         session()->destroy();
         return redirect()->to("/");
     }
 
+/**
+* changePass funkcija menja lozinku korisnika
+*
+* @return void
+*
+*/    
     public function changePass() {
         if ($this->request->getMethod() == "post") {
             //Change password logic
@@ -79,6 +108,13 @@ class User extends BaseController {
         }
     }
 
+/**
+* upgradeToBussines funkcija menja registrovanog usera u bussines
+*
+* @return void
+*
+*/
+    
     public function upgradeToBusiness() {
         helper("url");
         if ($this->request->getMethod() == "post") {
@@ -96,6 +132,12 @@ class User extends BaseController {
         }
     }
 
+    /**
+* createReservation funkcija pravi novu rezervaciju
+*
+* @return void
+*
+*/
     public function createReservation() {
         $time = $this->request->getVar("time");
         $date = $this->request->getVar("date");

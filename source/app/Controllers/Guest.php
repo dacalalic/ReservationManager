@@ -1,11 +1,27 @@
 <?php
 
+/**
+* Danilo Lalić 0501/17
+* Božo Labović 0563/17 
+* 
+* Guest – klasa za funkcionalnosti gosta
+*
+* @version 1.0
+*/
+
 namespace App\Controllers;
 
 use App\Models\UserModel;
 
 class Guest extends BaseController {
 
+/**
+* Index funkcija predstavlja pocetnu stranu gosta
+*
+* @return void
+*
+*/
+  
     public function index() {
         //Display home page for guest
         helper(["url"]);
@@ -14,6 +30,13 @@ class Guest extends BaseController {
         echo view("templates/footer");
     }
 
+/**
+* Login funkcija omogucava logovanje korisnika
+*
+* @return void
+*
+*/
+    
     public function login() {
         if ($this->request->getMethod() == "post") {
             //Log in logic
@@ -45,12 +68,22 @@ class Guest extends BaseController {
                     return redirect()->to("/user");
                 }
             }
+            echo view("templates/guest_header");
             echo view("guest/login_screen", ["validation" => $this->validator]);
+            echo view("templates/footer");
             return;
         }
-        echo view("guest/login_screen");
+            echo view("templates/guest_header");
+            echo view("guest/login_screen");
+            echo view("templates/footer");
     }
 
+/**
+* Signin funkcija omogucava kreiranje novog korisnika
+*
+* @return void
+*
+*/
     public function signin() {
         if ($this->request->getMethod() == "post") {
             //Sign in logic
@@ -77,13 +110,23 @@ class Guest extends BaseController {
                 $this->setSession(false);
                 return redirect()->to("/user");
             } else {
+                echo view("templates/guest_header");
                 echo view("guest/signin_screen", ["validation" => $this->validator]);
-            }
+                echo view("templates/footer");
+
+                }
         } else {
+            echo view("templates/guest_header");
             echo view("guest/signin_screen");
+            echo view("templates/footer");
         }
     }
-    
+/**
+* setSession funkcija postavlja podatke za sesiju
+*
+* @return void
+*
+*/
     private function setSession($userType) {
         $data = [
             "username" => $this->request->getVar("username"),

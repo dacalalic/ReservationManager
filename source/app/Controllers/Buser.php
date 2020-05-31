@@ -1,5 +1,14 @@
 <?php
 
+/**
+* Danilo Lalić 0501/17
+* Božo Labović 0563/17 
+* 
+* Buser – klasa za funkcionalnosti business korisnika
+*
+* @version 1.0
+*/
+
 namespace App\Controllers;
 
 use App\Models\ServiceModel;
@@ -7,6 +16,14 @@ use App\Models\PointModel;
 
 class Buser extends User {
 
+    
+    /**
+* createService funkcija kreira uslugu
+*
+* @return void
+*
+*/
+    
     public function createService() {
         helper(["form"]);
 
