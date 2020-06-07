@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script type="text/javascript"  id="debugbar_loader" data-time="1591572210" src="http://localhost:8080/index.php?debugbar"></script><script type="text/javascript"  id="debugbar_dynamic_script"></script><style type="text/css"  id="debugbar_dynamic_style"></style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://localhost:8080/css/template_style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+</head>
+
+<body>
+    <div id="page-container">
+        <header>
+            <nav>
+                <div class="navbar navbar-light bg-light">
+                    <div class="container">
+                        <a class="navbar-brand"  >
+                            <img src="images/waiter.png" width="50px" height="50px">
+                            Reservation manager
+                        </a>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                  <a class="nav-link"  id="services">
+                                    <img src="images/desk.png" width="50px" height="50px">
+                                    Services
+                                </a>
+                            </li>
+                        </ul>
+                        <div>
+                            <span class="align-middle d-inline">jovica</span>
+                            <div class="dropdown d-inline">
+                                <button class="btn dropdown-toggle" data-toggle="dropdown">
+                                    &#9881;
+                                </button>
+
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    
+                                    <a class="dropdown-item" >Upgrade to business</a>
+                                                                        <a class="dropdown-item" >Change the password</a>
+                                    <a class="dropdown-item">Log out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="content-wrap">
+<div class="container">
+    <input type="hidden" id="serviceId" value="19">
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <h2>Dilema</h2>
+        </div>
+        <div class="col-2">
+            <p>Cafe</p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <p>It is not a coincidence that this place is located right by the Danube. The best elements of the modern era have been placed at a perfect location and now they together offer more than a place to socialize.</p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12">
+                            <img src="data:image/png;base64,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">
+                    </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12" id="info">
+        </div>
+    </div>
+        <div class="row justify-content-center">
+        <div class="col-12">
+                            <div class="card">
+                    <div class="card-header">
+                        <h2>
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#res0">
+                                Point 1                            </button>
+                        </h2>
+                    </div>
+
+                    <div class="collapse" id="res0">
+                        <div class="card-body">
+                            <h5>Create reservation</h5>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="time">Time</label>
+                                            <input type="time" class="form-control" id="time0" name="time">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="date">Time</label>
+                                            <input type="date" class="form-control" id="date0" name="date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" class="pointId" value="0">
+                                <button type="button" class="btn btn-primary resbtn">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="card">
+                    <div class="card-header">
+                        <h2>
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#res1">
+                                Point 2                            </button>
+                        </h2>
+                    </div>
+
+                    <div class="collapse" id="res1">
+                        <div class="card-body">
+                            <h5>Create reservation</h5>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="time">Time</label>
+                                            <input type="time" class="form-control" id="time1" name="time">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="date">Time</label>
+                                            <input type="date" class="form-control" id="date1" name="date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" class="pointId" value="1">
+                                <button type="button" class="btn btn-primary resbtn">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="card">
+                    <div class="card-header">
+                        <h2>
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#res2">
+                                Point 3                            </button>
+                        </h2>
+                    </div>
+
+                    <div class="collapse" id="res2">
+                        <div class="card-body">
+                            <h5>Create reservation</h5>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="time">Time</label>
+                                            <input type="time" class="form-control" id="time2" name="time">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="date">Time</label>
+                                            <input type="date" class="form-control" id="date2" name="date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" class="pointId" value="2">
+                                <button type="button" class="btn btn-primary resbtn">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="card">
+                    <div class="card-header">
+                        <h2>
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#res3">
+                                Point 4                            </button>
+                        </h2>
+                    </div>
+
+                    <div class="collapse" id="res3">
+                        <div class="card-body">
+                            <h5>Create reservation</h5>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="time">Time</label>
+                                            <input type="time" class="form-control" id="time3" name="time">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="date">Time</label>
+                                            <input type="date" class="form-control" id="date3" name="date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" class="pointId" value="3">
+                                <button type="button" class="btn btn-primary resbtn">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="card">
+                    <div class="card-header">
+                        <h2>
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#res4">
+                                Point 5                            </button>
+                        </h2>
+                    </div>
+
+                    <div class="collapse" id="res4">
+                        <div class="card-body">
+                            <h5>Create reservation</h5>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="time">Time</label>
+                                            <input type="time" class="form-control" id="time4" name="time">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="date">Time</label>
+                                            <input type="date" class="form-control" id="date4" name="date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" class="pointId" value="4">
+                                <button type="button" class="btn btn-primary resbtn">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="card">
+                    <div class="card-header">
+                        <h2>
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#res5">
+                                Point 6                            </button>
+                        </h2>
+                    </div>
+
+                    <div class="collapse" id="res5">
+                        <div class="card-body">
+                            <h5>Create reservation</h5>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="time">Time</label>
+                                            <input type="time" class="form-control" id="time5" name="time">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="date">Time</label>
+                                            <input type="date" class="form-control" id="date5" name="date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" class="pointId" value="5">
+                                <button type="button" class="btn btn-primary resbtn">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="card">
+                    <div class="card-header">
+                        <h2>
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#res6">
+                                Point 7                            </button>
+                        </h2>
+                    </div>
+
+                    <div class="collapse" id="res6">
+                        <div class="card-body">
+                            <h5>Create reservation</h5>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="time">Time</label>
+                                            <input type="time" class="form-control" id="time6" name="time">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="date">Time</label>
+                                            <input type="date" class="form-control" id="date6" name="date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" class="pointId" value="6">
+                                <button type="button" class="btn btn-primary resbtn">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="card">
+                    <div class="card-header">
+                        <h2>
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#res7">
+                                Point 8                            </button>
+                        </h2>
+                    </div>
+
+                    <div class="collapse" id="res7">
+                        <div class="card-body">
+                            <h5>Create reservation</h5>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="time">Time</label>
+                                            <input type="time" class="form-control" id="time7" name="time">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="date">Time</label>
+                                            <input type="date" class="form-control" id="date7" name="date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" class="pointId" value="7">
+                                <button type="button" class="btn btn-primary resbtn">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+    </div>
+<script src="http://localhost:8080/js/send_reservation.js" defer></script>
+        </div>
+        <footer>
+            <div class="container" style="text-align: center">
+                <p>Copyright 2020</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
