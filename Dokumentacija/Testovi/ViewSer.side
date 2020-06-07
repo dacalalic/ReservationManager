@@ -1,0 +1,176 @@
+{
+  "id": "462e6789-d5f6-4b3e-a96f-69634d3cb272",
+  "version": "2.0",
+  "name": "ViewSer",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "b16bf855-046d-4144-9659-6f7e765b4b8d",
+    "name": "ViewSer1",
+    "commands": [{
+      "id": "5f9996fa-609c-49f3-ab9c-b57fea17210c",
+      "comment": "",
+      "command": "open",
+      "target": "/user",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7146a66-cbf8-46a5-a69f-b7a9bab30ff4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "927x727",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "185898f4-443f-46c1-8cac-47eb08ec71db",
+      "comment": "",
+      "command": "click",
+      "target": "id=services",
+      "targets": [
+        ["id=services", "id"],
+        ["linkText=Services", "linkText"],
+        ["css=#services", "css:finder"],
+        ["xpath=//a[@id='services']", "xpath:attributes"],
+        ["xpath=//div[@id='page-container']/header/nav/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/serviceviewer/allservices')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Services')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "143f6ac5-7ed6-473f-bf10-dcd6258f3bc0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(2)",
+      "targets": [
+        ["css=.form-group:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content-wrap']/div/div[2]/form/div", "xpath:idRelative"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d655672f-6ee7-494d-9c61-70e763cdb1d1",
+      "comment": "",
+      "command": "click",
+      "target": "id=cafe",
+      "targets": [
+        ["id=cafe", "id"],
+        ["css=#cafe", "css:finder"],
+        ["xpath=//input[@id='cafe']", "xpath:attributes"],
+        ["xpath=//div[@id='content-wrap']/div/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79e2cdbd-cbc2-4174-b617-4574a1fa43e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='content-wrap']/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b3761e8-6384-4eb8-bc0e-802fd80f00e8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View service",
+      "targets": [
+        ["linkText=View service", "linkText"],
+        ["css=.col-3:nth-child(2) .card-link", "css:finder"],
+        ["xpath=//a[contains(text(),'View service')]", "xpath:link"],
+        ["xpath=//div[@id='content-wrap']/div/div/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/serviceviewer/singleservice?id=17')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View service')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "678cadeb-9069-4413-8f53-c3509730e8ec",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-10 > h2",
+      "targets": [
+        ["css=.col-10 > h2", "css:finder"],
+        ["xpath=//div[@id='content-wrap']/div/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Divan')]", "xpath:innerText"]
+      ],
+      "value": "Divan"
+    }]
+  }, {
+    "id": "0faded80-bbf2-4ff2-83fe-b2c809ba07ad",
+    "name": "ViewSer2",
+    "commands": [{
+      "id": "418e53de-a709-4f44-bcac-fe806e17aa03",
+      "comment": "",
+      "command": "open",
+      "target": "/user",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c0eb4e2-3a8f-4ea2-822d-6a499cca4706",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "927x727",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f5b703db-0c49-45d0-95a9-afb7d85b0609",
+      "comment": "",
+      "command": "click",
+      "target": "id=services",
+      "targets": [
+        ["id=services", "id"],
+        ["linkText=Services", "linkText"],
+        ["css=#services", "css:finder"],
+        ["xpath=//a[@id='services']", "xpath:attributes"],
+        ["xpath=//div[@id='page-container']/header/nav/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/serviceviewer/allservices')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Services')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e57d7dea-17e0-4c9f-9751-a15c7dbdcd71",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View service",
+      "targets": [
+        ["linkText=View service", "linkText"],
+        ["css=.col-3:nth-child(1) .card-link", "css:finder"],
+        ["xpath=//a[contains(text(),'View service')]", "xpath:link"],
+        ["xpath=//div[@id='content-wrap']/div/div[3]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/serviceviewer/singleservice?id=17')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View service')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "320605ee-2de3-4e2c-8db7-9462cc579fab",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-10 > h2",
+      "targets": [
+        ["css=.col-10 > h2", "css:finder"],
+        ["xpath=//div[@id='content-wrap']/div/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Divan')]", "xpath:innerText"]
+      ],
+      "value": "Divan"
+    }]
+  }],
+  "suites": [{
+    "id": "e9ec80ff-b276-4ebc-abd0-d42a107dcab3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b16bf855-046d-4144-9659-6f7e765b4b8d"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

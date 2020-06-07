@@ -1,0 +1,189 @@
+{
+  "id": "4f7132b7-7052-4aee-9bbf-7c6ca90fb879",
+  "version": "2.0",
+  "name": "UpgradeToBusiness",
+  "url": "http://localhost:8080/",
+  "tests": [{
+    "id": "81513cf1-2d90-45bb-a997-3667fa05844c",
+    "name": "UpgradeSucc",
+    "commands": [{
+      "id": "3f04a790-a4e0-40d7-9700-5504227b23ab",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b066070-fdfc-4ae9-a127-8adc5ca4ae65",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='page-container']/header/nav/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6badc8a9-384a-4206-9974-5575ef99bc98",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Upgrade to business",
+      "targets": [
+        ["linkText=Upgrade to business", "linkText"],
+        ["css=.dropdown-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Upgrade to business')]", "xpath:link"],
+        ["xpath=//div[@id='page-container']/header/nav/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/user/upgradetobusiness')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Upgrade to business')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf66c02a-3299-4af2-8634-95bc0bad7e34",
+      "comment": "",
+      "command": "click",
+      "target": "id=yes",
+      "targets": [
+        ["id=yes", "id"],
+        ["name=question", "name"],
+        ["css=#yes", "css:finder"],
+        ["xpath=//input[@id='yes']", "xpath:attributes"],
+        ["xpath=//div[@id='content-wrap']/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24d44122-2661-495f-8a1d-93c933d5defb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='content-wrap']/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "199bdbab-39e3-4dbe-843c-52d30b58c633",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='page-container']/header/nav/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e751f79a-240b-4a14-a072-9d732b862152",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Create service",
+      "targets": [
+        ["linkText=Create service", "linkText"],
+        ["css=.dropdown-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Create service')]", "xpath:link"],
+        ["xpath=//div[@id='page-container']/header/nav/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/buser/createservice')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create service')]", "xpath:innerText"]
+      ],
+      "value": "Create service"
+    }]
+  }, {
+    "id": "ced8901e-e4c1-41c7-bed0-6fd0a8006167",
+    "name": "UpgradeFail",
+    "commands": [{
+      "id": "d30fda99-80e8-4508-bde5-f4e9233cb9c8",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/user",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2749868-5fd0-42aa-9a7e-01b3a7ef2110",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "927x721",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92181499-cd38-4b60-a150-8bf792ec69db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='page-container']/header/nav/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a15ea3d0-c39d-4e59-9925-bc09705d8c4d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Upgrade to business",
+      "targets": [
+        ["linkText=Upgrade to business", "linkText"],
+        ["css=.dropdown-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Upgrade to business')]", "xpath:link"],
+        ["xpath=//div[@id='page-container']/header/nav/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/user/upgradetobusiness')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Upgrade to business')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83ced429-f0d5-4774-b6a8-5193cf336794",
+      "comment": "",
+      "command": "click",
+      "target": "id=no",
+      "targets": [
+        ["id=no", "id"],
+        ["css=#no", "css:finder"],
+        ["xpath=//input[@id='no']", "xpath:attributes"],
+        ["xpath=//div[@id='content-wrap']/div/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a365c4d2-1e6d-4526-844a-1d4ac652f9e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='content-wrap']/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "976bcfed-ee7f-48ac-8d2d-95b7f559930f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1:nth-child(1)",
+      "targets": [
+        ["css=h1:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='content-wrap']/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'MY RESERVATIONS')]", "xpath:innerText"]
+      ],
+      "value": "MY RESERVATIONS"
+    }]
+  }],
+  "suites": [{
+    "id": "d24c6e79-0ee3-42fc-adc6-0a9025eee20f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["81513cf1-2d90-45bb-a997-3667fa05844c"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

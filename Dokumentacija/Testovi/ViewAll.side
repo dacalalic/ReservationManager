@@ -1,0 +1,83 @@
+{
+  "id": "39b0ed96-951f-44cd-a074-220fea06caa8",
+  "version": "2.0",
+  "name": "ViewAll",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "b765d22b-d75d-4cb3-87d4-65166bc84dd2",
+    "name": "ViewAll",
+    "commands": [{
+      "id": "fed778a4-e9f5-41c9-93dc-c365e38e548d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea02dc1d-9b58-4c73-a027-d8c8155c215d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "927x725",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57414390-e5d2-41bc-b5b9-a7d92ba811c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#services > img",
+      "targets": [
+        ["css=#services > img", "css:finder"],
+        ["xpath=//img[contains(@src,'http://localhost:8080/images/desk.png')]", "xpath:img"],
+        ["xpath=//a[@id='services']/img", "xpath:idRelative"],
+        ["xpath=//li/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ec46cd2-3e1c-47f4-a3a2-09019c8c4704",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#services > img",
+      "targets": [
+        ["css=#services > img", "css:finder"],
+        ["xpath=//img[contains(@src,'http://localhost:8080/images/desk.png')]", "xpath:img"],
+        ["xpath=//a[@id='services']/img", "xpath:idRelative"],
+        ["xpath=//li/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1ebff6d-131d-4b11-8cec-263a27bb1945",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#services > img",
+      "targets": [
+        ["css=#services > img", "css:finder"],
+        ["xpath=//img[contains(@src,'http://localhost:8080/images/desk.png')]", "xpath:img"],
+        ["xpath=//a[@id='services']/img", "xpath:idRelative"],
+        ["xpath=//li/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3887272-cdd0-4a44-971f-627266e1b382",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=label:nth-child(1)",
+      "targets": [
+        ["css=label:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='content-wrap']/div/div[2]/form/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Select types of locals :')]", "xpath:innerText"]
+      ],
+      "value": "Select types of locals :"
+    }]
+  }],
+  "suites": [{
+    "id": "a872e476-975c-4b1b-b2af-7ff04ba7e4e5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b765d22b-d75d-4cb3-87d4-65166bc84dd2"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

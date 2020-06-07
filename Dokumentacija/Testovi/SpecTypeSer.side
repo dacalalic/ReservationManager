@@ -1,0 +1,122 @@
+{
+  "id": "4bec1ec5-465a-4ed1-a716-5a84095821b4",
+  "version": "2.0",
+  "name": "SpecTypeSer",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "2693b120-ea61-4805-b43a-75b949722950",
+    "name": "Main",
+    "commands": [{
+      "id": "e33a29d5-99c5-4541-8ed8-71a45cf2a24e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c4c1a7b-9e54-4ee7-9203-1b85e49125f1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "927x720",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f3eb4c9-1ddd-4c42-9d8e-fc4b20ecdb77",
+      "comment": "",
+      "command": "click",
+      "target": "id=services",
+      "targets": [
+        ["id=services", "id"],
+        ["linkText=Services", "linkText"],
+        ["css=#services", "css:finder"],
+        ["xpath=//a[@id='services']", "xpath:attributes"],
+        ["xpath=//div[@id='page-container']/header/nav/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/serviceviewer/allservices')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Services')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef4d79b8-609b-4222-93c2-22df84dde438",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=services",
+      "targets": [
+        ["id=services", "id"],
+        ["linkText=Services", "linkText"],
+        ["css=#services", "css:finder"],
+        ["xpath=//a[@id='services']", "xpath:attributes"],
+        ["xpath=//div[@id='page-container']/header/nav/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/serviceviewer/allservices')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Services')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef1ee4a9-842d-4fa7-b7cd-620f875f5e11",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=services",
+      "targets": [
+        ["id=services", "id"],
+        ["linkText=Services", "linkText"],
+        ["css=#services", "css:finder"],
+        ["xpath=//a[@id='services']", "xpath:attributes"],
+        ["xpath=//div[@id='page-container']/header/nav/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/serviceviewer/allservices')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Services')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9f6f506-ab79-4971-bbf6-258ea3d4e9be",
+      "comment": "",
+      "command": "click",
+      "target": "id=restaurant",
+      "targets": [
+        ["id=restaurant", "id"],
+        ["name=type", "name"],
+        ["css=#restaurant", "css:finder"],
+        ["xpath=//input[@id='restaurant']", "xpath:attributes"],
+        ["xpath=//div[@id='content-wrap']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd5737ab-573c-4d4d-9719-1fc76c631510",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='content-wrap']/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5c4a047-0035-42e2-aad8-2c15954292c9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-12 > h2",
+      "targets": [
+        ["css=.col-12 > h2", "css:finder"],
+        ["xpath=//div[@id='content-wrap']/div/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Restaurants')]", "xpath:innerText"]
+      ],
+      "value": "Restaurants"
+    }]
+  }],
+  "suites": [{
+    "id": "77a49d16-3c29-462c-99fc-f5f8a28de645",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2693b120-ea61-4805-b43a-75b949722950"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

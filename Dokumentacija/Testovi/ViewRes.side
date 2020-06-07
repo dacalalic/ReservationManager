@@ -1,0 +1,89 @@
+{
+  "id": "754c420a-908e-4045-953a-5ec901a15900",
+  "version": "2.0",
+  "name": "ViewRes",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "0276a71e-e314-4121-8f4b-c10fb99b50e1",
+    "name": "ViewRes",
+    "commands": [{
+      "id": "cf33f8ea-30ef-4c00-a789-a2928e8f0b9c",
+      "comment": "",
+      "command": "open",
+      "target": "/user",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db2c0d0c-5b28-4791-80b1-cc2f04aad695",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "927x726",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91116a8c-72cd-4c91-befa-eaabf8b4431d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Reservation manager",
+      "targets": [
+        ["linkText=Reservation manager", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//div[@id='page-container']/header/nav/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/user')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,' Reservation manager')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb1def10-80bd-42a0-a4b2-3dee8b9a5042",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Reservation manager",
+      "targets": [
+        ["linkText=Reservation manager", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//div[@id='page-container']/header/nav/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/user')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,' Reservation manager')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fe469da-991c-430f-b462-b23f593f7222",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Reservation manager",
+      "targets": [
+        ["linkText=Reservation manager", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//div[@id='page-container']/header/nav/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/user')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,' Reservation manager')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7baf3f22-0c02-4bbf-b49f-1681be0305b7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1:nth-child(1)",
+      "targets": [
+        ["css=h1:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='content-wrap']/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'MY RESERVATIONS')]", "xpath:innerText"]
+      ],
+      "value": "MY RESERVATIONS"
+    }]
+  }],
+  "suites": [{
+    "id": "8fc6f854-288a-4a79-9dce-cc33554f8780",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0276a71e-e314-4121-8f4b-c10fb99b50e1"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
